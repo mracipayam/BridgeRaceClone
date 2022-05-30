@@ -44,13 +44,13 @@ public class PlayerControl : MonoBehaviour
             target.transform.SetParent(collectableMainObject);
             Vector3 pos = prevObject.transform.localPosition;
 
-            pos.y += 0.33f;
+            pos.y += 0.22f;
             pos.z = 0;
             pos.x = 0;
 
             target.transform.localRotation = new Quaternion(0,0,0,1);
 
-            target.transform.DOLocalMove(pos,0.5f);
+            target.transform.DOLocalMove(pos,0.2f);
             prevObject = target.gameObject;
             cubes.Add(target.gameObject);
 
